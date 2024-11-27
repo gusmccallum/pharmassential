@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/pharmassential/static/css/main.d74b5e72.css",
+    "main.js": "/pharmassential/static/js/main.3a56182c.js",
+    "static/media/delivery3.jpg": "/pharmassential/static/media/delivery3.c8d134628e00d99a42cc.jpg",
+    "index.html": "/pharmassential/index.html",
+    "main.d74b5e72.css.map": "/pharmassential/static/css/main.d74b5e72.css.map",
+    "main.3a56182c.js.map": "/pharmassential/static/js/main.3a56182c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d74b5e72.css",
+    "static/js/main.3a56182c.js"
+  ]
+}
