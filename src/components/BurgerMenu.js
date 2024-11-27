@@ -10,11 +10,13 @@ const BurgerMenu = () => {
 
   return (
     <div className={`burger-menu ${isOpen ? 'open' : ''}`}>
-      <button className="burger-icon" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div className="burger-button-container">
+        <button className="burger-icon" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <nav className="menu-items">
         <ul>
           <li><a href="/" onClick={toggleMenu}>Home</a></li>
