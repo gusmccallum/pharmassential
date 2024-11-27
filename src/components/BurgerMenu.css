@@ -1,0 +1,80 @@
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.burger-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+}
+
+.burger-icon span {
+  background-color: #333;
+  height: 3px;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.burger-menu.open .burger-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.open .burger-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .burger-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-items {
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  transition: left 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu.open .menu-items {
+  left: 0;
+}
+
+.menu-items ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items li {
+  padding: 0.5rem 1rem;
+}
+
+.menu-items a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menu-items a:hover {
+  color: #0056b3;
+} 
